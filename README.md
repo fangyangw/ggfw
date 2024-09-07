@@ -8,5 +8,5 @@ python -m pip install selenium
 
 ## 运行方法
 执行：python main.py
-执行后会弹出登录页面，请手动登录，并进入到课程列表页面，https://ggfw.hrss.gd.gov.cn/zxpx/hyper/courseDetail?ocid=OC202404290000005581
+执行后会弹出登录页面，请手动登录，并进入到课程列表页面(例如：https://ggfw.hrss.gd.gov.cn/zxpx/hyper/courseDetail?ocid=OC202404290000005581）
 保证该列表页面在第一个标签页，等待即可
