@@ -146,18 +146,17 @@ current_class_index = 0
 while True:
     
     try:
-        check_and_watch_vidio(1)
-        current_class_index += 1
-        if current_class_index > len(all_class):
-            break
+        check_and_watch_vidio()
         all_class = driver.find_elements(By.XPATH, "//*[contains(text(), '点击学习')]")
-        current_class = all_class[current_class_index]
-        current_class.click()  
+        if len(all_class) < 1:
+            break
+        current_class = all_class[0]
+        current_class.click()
     
     # 处理元素找不到的异常
     except Exception as e:
         print(e)     
-    time.sleep(1)
+    time.sleep(2)
 
 # 关闭浏览器
 driver.quit()
